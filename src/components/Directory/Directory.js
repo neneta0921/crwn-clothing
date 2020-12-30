@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MenuItem from '../MenuItem/MenuItem';
-import { sections } from '../../DirectoryData';
+import { sections } from '../../data/DirectoryData';
 import './Directrory.scss';
 
 export const Directory = () => (
