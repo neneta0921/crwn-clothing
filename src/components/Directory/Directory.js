@@ -1,5 +1,3 @@
-import React from 'react';
-
 import MenuItem from '../MenuItem/MenuItem';
 import { sections } from '../../data/DirectoryData';
 import './Directrory.scss';

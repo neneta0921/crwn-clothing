@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { CollectionPreview } from '../../components/CollectionPreview/CollectionPreview';
 import { collections } from '../../data/ShopData'
 
