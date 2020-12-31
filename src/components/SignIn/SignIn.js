@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { signInWithGoogle } from '../../firebase/firebase.utils';
+import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
 
 import { CustomButton } from '../CustomButton/CustomButton';
 import { FormInput } from '../FormInput/FormInput';
@@ -11,10 +11,15 @@ export const SignIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async event => {
     event.preventDefault();
-    setEmail('');
-    setPassword('');
+    try {
+      await auth.signInWithEmailAndPassword(email, password)
+      setEmail('');
+      setPassword('');
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   const onEmailChange = (event) => {
@@ -49,7 +54,7 @@ export const SignIn = () => {
         />
         <div className="buttons">
           <CustomButton type="submit">Sign in</CustomButton>
-          <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+          <CustomButton type="button" onClick={signInWithGoogle} isGoogleSignIn>
             Sign in with Google
           </CustomButton>
         </div>
