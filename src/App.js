@@ -5,13 +5,13 @@ import { createStructuredSelector } from 'reselect';
 
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.actions';
-import { selectCurrentUser } from './redux/user/users.selectors';
+import { selectCurrentUser } from './redux/user/user.selectors';
 
 import Header from './components/Header/Header';
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 import { HomePage } from './pages/HomePage/HomePage';
 import { ShopPage } from './pages/ShopPage/ShopPage';
-import { SignInAndSignUp } from './pages/SignInAndSignUp/SignInAndSignUp';
+import { SignInAndSignUpPage } from './pages/SignInAndSignUpPage/SignInAndSignUpPage';
 import './App.css';
 
 class App extends React.Component {
@@ -27,10 +27,9 @@ class App extends React.Component {
             id: snapShot.id,
             ...snapShot.data()
           })
-        });
-      } else {
-        setCurrentUser(userAuth)
+        })
       }
+      setCurrentUser(userAuth)
     });
   }
 
@@ -46,7 +45,7 @@ class App extends React.Component {
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
           <Route exact path='/checkout' component={CheckoutPage} />
-          <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<SignInAndSignUp />)} />
+          <Route exact path='/signin' render={() => this.props.currentUser ? (<Redirect to='/' />) : (<SignInAndSignUpPage />)} />
         </Switch>
       </div>
     )

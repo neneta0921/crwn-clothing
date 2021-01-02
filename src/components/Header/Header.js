@@ -6,7 +6,8 @@ import { auth } from '../../firebase/firebase.utils';
 
 import CartDropdown from '../CartDropdown/CartDropdown';
 import CartIcon from '../CartIcon/CartIcon';
-import { selectCartHidden, selectCurrentUser } from '../../redux/user/users.selectors';
+import { selectCartHidden } from '../../redux/cart/cart.selectors';
+import { selectCurrentUser } from '../../redux/user/user.selectors';
 
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import './Header.scss';
