@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { auth } from '../../firebase/firebase.utils';
 
-import { CartDropdown } from '../CartDropdown/CartDropdown'
+import CartDropdown from '../CartDropdown/CartDropdown'
 import CartIcon from '../CartIcon/CartIcon';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import './Header.scss';
