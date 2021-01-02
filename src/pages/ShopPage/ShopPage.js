@@ -1,10 +1,10 @@
 import { CollectionPreview } from '../../components/CollectionPreview/CollectionPreview';
-import { collections } from '../../data/ShopData'
+import { SHOP_DATA } from '../../data/ShopData'
 
 export const ShopPage = () => (
   <div className='shop-page'>
     {
-      collections.map(({id, ...otherCollectionProps}) => (
+      SHOP_DATA.map(({id, ...otherCollectionProps}) => (
         <CollectionPreview key={id} {...otherCollectionProps} />
       ))
     }
