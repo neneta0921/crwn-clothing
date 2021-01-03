@@ -1,9 +1,9 @@
 import { SignIn } from '../../components/SignIn/SignIn';
 import { SignUp } from '../../components/SignUp/SignUp'
 
-import './SignInAndSignUp.scss';
+import './SignInAndSignUpPage.scss';
 
-export const SignInAndSignUp = () => (
+export const SignInAndSignUpPage = () => (
   <div className='sign-in-and-sign-up'>
     <SignIn />
     <SignUp />
