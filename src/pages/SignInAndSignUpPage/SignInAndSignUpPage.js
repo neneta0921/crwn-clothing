@@ -1,11 +1,11 @@
 import { SignIn } from '../../components/SignIn/SignIn';
 import { SignUp } from '../../components/SignUp/SignUp'
 
-import './SignInAndSignUpPage.scss';
+import { SignInAndSignUpContainer } from './SignInAndSignUpPage.styles'
 
 export const SignInAndSignUpPage = () => (
-  <div className='sign-in-and-sign-up'>
+  <SignInAndSignUpContainer>
     <SignIn />
     <SignUp />
-  </div>
+  </SignInAndSignUpContainer>
 )
