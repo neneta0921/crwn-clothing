@@ -1,5 +1,5 @@
 import Directory from '../../components/Directory/Directory';
-import { HomePageContainer } from './HomePage.styles';
+import { HomePageContainer } from './HomePageStyles';
 
 export const HomePage = () => (
   <HomePageContainer>

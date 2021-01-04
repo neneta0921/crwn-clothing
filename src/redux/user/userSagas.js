@@ -1,14 +1,14 @@
 import { takeLatest, put, all, call } from 'redux-saga/effects';
 
-import { UserActionTypes } from './user.types';
-import { signInSuccess, signInFailure } from './user.actions';
+import { UserActionTypes } from './userTypes';
+import { signInSuccess, signInFailure } from './userActions';
 
 import {
   auth,
   googleProvider,
   createUserProfileDocument,
   getCurrentUser
-} from '../../firebase/firebase.utils';
+} from '../../firebase/firebaseUtils';
 
 export function* getSnapshotFromUserAuth(userAuth) {
   try {

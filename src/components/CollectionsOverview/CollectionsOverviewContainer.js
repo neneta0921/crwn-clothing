@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
 
-import { selectIsCollectionFetching } from '../../redux/shop/shop.selectors';
+import { selectIsCollectionFetching } from '../../redux/shop/shopSelectors';
 
 import CollectionsOverview from './CollectionsOverview';
 import { WithSpinner } from '../../components/WithSpinner/WithSpinner';

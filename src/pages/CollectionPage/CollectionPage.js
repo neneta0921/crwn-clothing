@@ -1,18 +1,16 @@
 import { connect } from 'react-redux';
 
-import { selectCollection } from '../../redux/shop/shop.selectors';
+import { selectCollection } from '../../redux/shop/shopSelectors';
 import CollectionItem from '../../components/CollectionItem/CollectionItem';
 
 import {
   CollectionItemsContainer,
   CollectionPageContainer,
   CollectionTitle
-} from './CollectionPage.styles'
+} from './CollectionPageStyles'
 
 const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
-  // console.log('CollectionPage', collection)
-  // console.log(title,collection)
   return (
     <CollectionPageContainer>
       <CollectionTitle>{title}</CollectionTitle>

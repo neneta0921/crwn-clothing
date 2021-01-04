@@ -1,4 +1,4 @@
-import { CustomButtonContainer }  from './CustomButton.styles'
+import { CustomButtonContainer }  from './CustomButtonStyles'
 
 export const CustomButton = ({ children, ...props }) => (
   <CustomButtonContainer {...props}>

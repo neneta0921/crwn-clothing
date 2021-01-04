@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { connect } from 'react-redux';
 
-import { googleSignInStart, emailSignInStart } from '../../redux/user/user.actions';
+import { googleSignInStart, emailSignInStart } from '../../redux/user/userActions';
 
 import { CustomButton } from '../CustomButton/CustomButton';
 import { FormInput } from '../FormInput/FormInput';
@@ -10,7 +10,7 @@ import {
   ButtonBarContainer,
   SignInContainer,
   SignInTitle
-} from './SignIn.styles';
+} from './SignInStyles';
 
 const SignIn = ({ googleSignInStart, emailSignInStart }) => {
   const [email, setEmail] = useState('');

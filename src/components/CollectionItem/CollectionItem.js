@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { addItem } from '../../redux/cart/cart.actions'
+import { addItem } from '../../redux/cart/cartActions'
 
 import {
   AddButton,
@@ -9,7 +9,7 @@ import {
   CollectionFooterContainer,
   NameContainer,
   PriceContainer
-} from './CollectionItem.styles';
+} from './CollectionItemStyles';
 
 const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
