@@ -1,4 +1,4 @@
-import { takeLatest, put, all, call } from 'redux-saga/effects';
+import {  all, call, takeLatest, put } from 'redux-saga/effects';
 
 import { UserActionTypes } from './userTypes';
 import { signInSuccess, signInFailure, signOutSuccess, signOutFailure } from './userActions';
