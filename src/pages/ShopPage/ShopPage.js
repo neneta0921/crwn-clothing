@@ -21,11 +21,14 @@ const ShopPage = ({ match, updateCollections }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let unsubscribeFromSnapshot = null
     const collectionRef = firestore.collection('collections');
-    unsubscribeFromSnapshot = collectionRef.onSnapshot(async snapshot => {
+
+    // fetch('https://firestore.googleapis.com/v1/projects/crwn-db-e2485/databases/(default)/documents/collections')
+    //   .then(response => response.json())
+    //   .then(collections => console.log(collections))
+
+    collectionRef.get().then(snapshot => {
       const collectionsMap = convertCollectionsSnapshotToMap(snapshot)
-      console.log(collectionsMap);
       updateCollections(collectionsMap);
       setLoading(false);
     })
