@@ -11,7 +11,7 @@ import { CollectionsOverviewContainer } from '../../components/CollectionsOvervi
 const ShopPage = ({ match, fetchCollectionsStart }) => {
   useEffect(() => {
     fetchCollectionsStart();
-  })
+  }, [fetchCollectionsStart])
   return (
     <div className='shop-page'>
       <Route
