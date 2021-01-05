@@ -9,10 +9,14 @@ import { FormInput } from '../FormInput/FormInput';
 import { SignUpContainer, SignUpTitle } from './SignUpStyles'
 
 const SignUp = ({ signUpStart }) => {
-  const [displayName, setDisplayName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [userCredentials, setUserCredentials] = useState({
+    displayName: '',
+    email: '',
+    password: '',
+    confirmPassword: ''
+  });
+
+  const { displayName, email, password, confirmPassword } = userCredentials;
 
   const handleSubmit = async event => {
     event.preventDefault();
@@ -24,20 +28,9 @@ const SignUp = ({ signUpStart }) => {
     await signUpStart({ email, password, displayName });
   }
 
-  const onDisplayNameChange = (event) => {
-    setDisplayName(event.target.value);
-  }
-
-  const onEmailChange = (event) => {
-    setEmail(event.target.value);
-  }
-
-  const onPasswordChange = (event) => {
-    setPassword(event.target.value);
-  }
-
-  const onConfirmPasswordChange = (event) => {
-    setConfirmPassword(event.target.value);
+  const handleChange = (event) => {
+    const { value, name } = event.target;
+    setUserCredentials({ ...userCredentials, [name]: value});
   }
 
   return (
@@ -49,7 +42,7 @@ const SignUp = ({ signUpStart }) => {
           type='text'
           name='displayName'
           value={displayName}
-          onChange={onDisplayNameChange}
+          onChange={handleChange}
           label='Display Name'
           required
         />
@@ -57,7 +50,7 @@ const SignUp = ({ signUpStart }) => {
           type='email'
           name='email'
           value={email}
-          onChange={onEmailChange}
+          onChange={handleChange}
           label='email'
           required
         />
@@ -65,7 +58,7 @@ const SignUp = ({ signUpStart }) => {
           type='password'
           name='password'
           value={password}
-          onChange={onPasswordChange}
+          onChange={handleChange}
           label='password'
           required
         />
@@ -73,7 +66,7 @@ const SignUp = ({ signUpStart }) => {
           type='password'
           name='confirmPassword'
           value={confirmPassword}
-          onChange={onConfirmPasswordChange}
+          onChange={handleChange}
           label='confirmPassword'
           required
         />
