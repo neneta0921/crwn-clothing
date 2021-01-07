@@ -1,11 +1,13 @@
 import SignIn from '../../components/SignIn/SignIn';
-import SignUp from '../../components/SignUp/SignUp'
+import SignUp from '../../components/SignUp/SignUp';
 
-import { SignInAndSignUpContainer } from './SignInAndSignUpPageStyles'
+import { SignInAndSignUpContainer } from './SignInAndSignUpPageStyles';
 
-export const SignInAndSignUpPage = () => (
+const SignInAndSignUpPage = () => (
   <SignInAndSignUpContainer>
     <SignIn />
     <SignUp />
   </SignInAndSignUpContainer>
-)
+);
+
+export default SignInAndSignUpPage;

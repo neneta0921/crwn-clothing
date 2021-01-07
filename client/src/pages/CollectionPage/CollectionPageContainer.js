@@ -8,13 +8,10 @@ import CollectionPage from './CollectionPage';
 import { WithSpinner } from '../../components/WithSpinner/WithSpinner';
 
 const mapStateToProps = createStructuredSelector({
-  isLoading: state => !selectIsCollectionLoaded(state)
-})
+  isLoading: (state) => !selectIsCollectionLoaded(state),
+});
 
 // Wrapped with Higher Order Component
-const CollectionPageContainer = compose(
-  connect(mapStateToProps),
-  WithSpinner
-)(CollectionPage);
+const CollectionPageContainer = compose(connect(mapStateToProps), WithSpinner)(CollectionPage);
 
-export { CollectionPageContainer }
+export default CollectionPageContainer;
