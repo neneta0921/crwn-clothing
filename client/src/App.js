@@ -11,38 +11,38 @@ import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 import { HomePage } from './pages/HomePage/HomePage';
 import ShopPage from './pages/ShopPage/ShopPage';
 import { SignInAndSignUpPage } from './pages/SignInAndSignUpPage/SignInAndSignUpPage';
-import './App.css';
+
+import { GlobalStyle } from './GlobalStyles';
 
 const App = ({ checkUserSession, currentUser }) => {
-  let unsubscribeFromAuth = null;
-
   useEffect(() => {
     checkUserSession();
-  }, [checkUserSession])
-
-  // componentWillUnmount() {
-  //   this.unsubscribeFromAuth();
-  // }
+  }, [checkUserSession]);
 
   return (
     <div>
+      <GlobalStyle />
       <Header />
       <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route path='/shop' component={ShopPage} />
-        <Route exact path='/checkout' component={CheckoutPage} />
-        <Route exact path='/signin' render={() => currentUser ? (<Redirect to='/' />) : (<SignInAndSignUpPage />)} />
+        <Route exact path="/" component={HomePage} />
+        <Route path="/shop" component={ShopPage} />
+        <Route exact path="/checkout" component={CheckoutPage} />
+        <Route
+          exact
+          path="/signin"
+          render={() => (currentUser ? <Redirect to="/" /> : <SignInAndSignUpPage />)}
+        />
       </Switch>
     </div>
-  )
-}
+  );
+};
 
 const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser
-})
+  currentUser: selectCurrentUser,
+});
 
-const mapDispatchToProps = dispatch => ({
-  checkUserSession: () => dispatch(checkUserSession())
-})
+const mapDispatchToProps = (dispatch) => ({
+  checkUserSession: () => dispatch(checkUserSession()),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
