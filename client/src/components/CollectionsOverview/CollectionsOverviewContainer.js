@@ -8,8 +8,8 @@ import CollectionsOverview from './CollectionsOverview';
 import { WithSpinner } from '../../components/WithSpinner/WithSpinner';
 
 const mapStateToProps = createStructuredSelector({
-  isLoading: selectIsCollectionFetching
-})
+  isLoading: selectIsCollectionFetching,
+});
 
 // Wrapped with Higher Order Component
 const CollectionsOverviewContainer = compose(
@@ -17,4 +17,4 @@ const CollectionsOverviewContainer = compose(
   WithSpinner
 )(CollectionsOverview);
 
-export { CollectionsOverviewContainer }
+export default CollectionsOverviewContainer;
