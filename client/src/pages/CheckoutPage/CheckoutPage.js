@@ -3,7 +3,7 @@ import { createStructuredSelector } from 'reselect';
 
 import { selectCartItems, selectCartTotal } from '../../redux/cart/cartSelectors';
 import CheckoutItem from '../../components/CheckoutItem/CheckoutItem';
-import { StripeCheckoutButton } from '../../components/StripeCheckoutButton/StripeChekcoutButton';
+import StripeCheckoutButton from '../../components/StripeCheckoutButton/StripeChekcoutButton';
 
 import {
   CheckoutHeaderContainer,

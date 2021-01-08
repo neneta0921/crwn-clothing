@@ -23,5 +23,3 @@ export const removeItemFromCart = (cartItems, cartItemToRemove) => {
       : cartItem
   );
 };
-
-export const storeCartItems = (cartItems) => {};
