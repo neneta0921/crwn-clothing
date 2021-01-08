@@ -10,7 +10,7 @@ import {
   CheckoutPageContainer,
   HeaderBlockContainer,
   TotalContainer,
-  WarningContainer
+  WarningContainer,
 } from './CheckoutPageStyles';
 
 const CheckoutPage = ({ cartItems, total }) => (
@@ -32,8 +32,8 @@ const CheckoutPage = ({ cartItems, total }) => (
         <span>Remove</span>
       </HeaderBlockContainer>
     </CheckoutHeaderContainer>
-    {cartItems.map(cartItem => (
-        <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+    {cartItems.map((cartItem) => (
+      <CheckoutItem key={cartItem.id} cartItem={cartItem} />
     ))}
     <TotalContainer>
       <span>TOTAL: ${total}</span>
@@ -45,11 +45,11 @@ const CheckoutPage = ({ cartItems, total }) => (
     </WarningContainer>
     <StripeCheckoutButton price={total} />
   </CheckoutPageContainer>
-)
+);
 
 const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems,
-  total: selectCartTotal
-})
+  total: selectCartTotal,
+});
 
-export default connect(mapStateToProps)(CheckoutPage)
+export default connect(mapStateToProps)(CheckoutPage);
