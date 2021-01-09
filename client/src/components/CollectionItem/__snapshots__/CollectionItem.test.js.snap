@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CollectionItem component should render CollectionItem component 1`] = `
+<div
+  className="sc-gsTCUz bLLZpE"
+>
+  <div
+    className="sc-hKgILt hkHzXq background-image"
+  />
+  <div
+    className="sc-eCssSg jFCvIw"
+  >
+    <span
+      className="sc-jSgupP jbqeKv name-container"
+    >
+      black hat
+    </span>
+    <span
+      className="sc-gKsewC kIfwPX price-container"
+    >
+      20
+    </span>
+  </div>
+  <button
+    className="sc-bdfBwQ hBuaMb sc-dlfnbm kzeJXE add-button"
+    onClick={[Function]}
+  >
+    Add to cart
+  </button>
+</div>
+`;
