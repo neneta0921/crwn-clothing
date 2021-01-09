@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartIcon component should render CartIcon component 1`] = `
+<div
+  className="sc-bdfBwQ flWUgh cart-icon-container"
+  onClick={[MockFunction]}
+>
+  <svg
+    className="sc-gsTCUz ilxHWr"
+  >
+    shopping-bag.svg
+  </svg>
+  <span
+    className="sc-dlfnbm gyrcfu item-count-container"
+  >
+    0
+  </span>
+</div>
+`;
