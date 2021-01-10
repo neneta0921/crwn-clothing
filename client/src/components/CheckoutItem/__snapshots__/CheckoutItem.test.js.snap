@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckoutItem component should render CheckoutItem component 1`] = `
+<div
+  className="sc-bdfBwQ eUoWEP"
+>
+  <div
+    className="sc-gsTCUz fAhmBG"
+  >
+    <img
+      alt="item"
+      src="www.testImage.com"
+    />
+  </div>
+  <span
+    className="sc-dlfnbm dqsrEz"
+  >
+    hats
+  </span>
+  <span
+    className="sc-dlfnbm sc-hKgILt dqsrEz lhoYWa quantity-container"
+  >
+    <div
+      onClick={[Function]}
+    >
+      -
+    </div>
+    <span>
+      3
+    </span>
+    <div
+      onClick={[Function]}
+    >
+      +
+    </div>
+  </span>
+  <span
+    className="sc-dlfnbm dqsrEz"
+  >
+    20
+  </span>
+  <div
+    className="sc-eCssSg dJkOIt remove-button"
+    onClick={[Function]}
+  >
+    ✕
+  </div>
+</div>
+`;

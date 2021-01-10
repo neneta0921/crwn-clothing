@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartDropdown component should render CartDropdown component 1`] = `
+<div
+  className="sc-eCssSg fvNjKi"
+>
+  <div
+    className="sc-iBPRYJ jqxTEs"
+  >
+    <div
+      className="sc-bdfBwQ bTXWnC"
+    >
+      <img
+        alt="item"
+        className="sc-gsTCUz ebGfmt"
+      />
+      <div
+        className="sc-dlfnbm iMlZdi"
+      >
+        <span
+          className="name"
+        />
+        <span
+          className="price"
+        >
+           x $
+        </span>
+      </div>
+    </div>
+    <div
+      className="sc-bdfBwQ bTXWnC"
+    >
+      <img
+        alt="item"
+        className="sc-gsTCUz ebGfmt"
+      />
+      <div
+        className="sc-dlfnbm iMlZdi"
+      >
+        <span
+          className="name"
+        />
+        <span
+          className="price"
+        >
+           x $
+        </span>
+      </div>
+    </div>
+    <div
+      className="sc-bdfBwQ bTXWnC"
+    >
+      <img
+        alt="item"
+        className="sc-gsTCUz ebGfmt"
+      />
+      <div
+        className="sc-dlfnbm iMlZdi"
+      >
+        <span
+          className="name"
+        />
+        <span
+          className="price"
+        >
+           x $
+        </span>
+      </div>
+    </div>
+  </div>
+  <button
+    className="sc-hKgILt FcWca sc-jSgupP YYmgl cart-dropdown-button"
+    onClick={[Function]}
+  >
+    GO TO CHECKOUT
+  </button>
+</div>
+`;
