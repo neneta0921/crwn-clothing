@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import renderer from 'react-test-renderer';
 
 import { Header } from './Header';
 import CartDropdown from '../CartDropdown/CartDropdown';
@@ -20,10 +19,9 @@ describe('Header component', () => {
     wrapper = shallow(<Header {...mockProps} />);
   });
 
-  // it('should render Header component', () => {
-  //   const tree = renderer.create(wrapper).toJSON();
-  //   expect(tree).toMatchSnapshot();
-  // });
+  it('should render Header component', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 
   describe('if currentUser is present', () => {
     it('should render sign out link', () => {

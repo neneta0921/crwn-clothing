@@ -2,7 +2,7 @@ import { Profiler } from 'react';
 import Directory from '../../components/Directory/Directory';
 import { HomePageContainer } from './HomePageStyles';
 
-const HomePage = () => (
+export const HomePage = () => (
   <HomePageContainer>
     <Profiler
       id="Directory"

@@ -11,7 +11,7 @@ const CollectionsOverviewContainer = lazy(() =>
   import('../../components/CollectionsOverview/CollectionsOverviewContainer')
 );
 
-const ShopPage = ({ match, fetchCollectionsStart }) => {
+export const ShopPage = ({ match, fetchCollectionsStart }) => {
   useEffect(() => {
     fetchCollectionsStart();
   }, [fetchCollectionsStart]);
