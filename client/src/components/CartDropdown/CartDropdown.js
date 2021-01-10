@@ -19,10 +19,11 @@ export const CartDropdown = ({ cartItems, history, dispatch }) => (
       {cartItems.length ? (
         cartItems.map((cartItem) => <CartItem key={cartItem.id} item={cartItem} />)
       ) : (
-        <EmptyMessageContainer className="empty-message">Your cart is empty</EmptyMessageContainer>
+        <EmptyMessageContainer>Your cart is empty</EmptyMessageContainer>
       )}
     </CartItemContainer>
     <CartDropdownButton
+      key="cart-dropdown-button"
       className="cart-dropdown-button"
       onClick={() => {
         history.push('/checkout');

@@ -19,15 +19,13 @@ export const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
         <img src={imageUrl} alt="item" />
       </ImageContainer>
       <TextContainer>{name}</TextContainer>
-      <QuantityContainer className="quantity-container">
+      <QuantityContainer>
         <div onClick={() => removeItem(cartItem)}>&#45;</div>
         <span>{quantity}</span>
         <div onClick={() => addItem(cartItem)}>&#43;</div>
       </QuantityContainer>
       <TextContainer>{price}</TextContainer>
-      <RemoveButtonContainer className="remove-button" onClick={() => clearItem(cartItem)}>
-        &#10005;
-      </RemoveButtonContainer>
+      <RemoveButtonContainer onClick={() => clearItem(cartItem)}>&#10005;</RemoveButtonContainer>
     </CheckoutItemContainer>
   );
 };

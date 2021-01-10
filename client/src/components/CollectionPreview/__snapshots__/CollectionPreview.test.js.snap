@@ -5,7 +5,7 @@ exports[`CollectionPreview component should render CollectionPreview component 1
   className="sc-iBPRYJ gyKNFV"
 >
   <h2
-    className="sc-fubCfw bLzYkF title-container"
+    className="sc-fubCfw bLzYkF"
     onClick={[Function]}
   >
     HATS

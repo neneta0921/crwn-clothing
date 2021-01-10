@@ -16,6 +16,8 @@ export const TitleContainer = styled.h2`
   cursor: pointer;
 `;
 
+TitleContainer.displayName = 'TitleContainer';
+
 export const PreviewContainer = styled.div`
   display: flex;
   justify-content: space-between;

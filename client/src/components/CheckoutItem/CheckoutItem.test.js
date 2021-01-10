@@ -34,17 +34,17 @@ describe('CheckoutItem component', () => {
   });
 
   it('should call clearItem when remove button is clicked', () => {
-    wrapper.find('.remove-button').simulate('click');
+    wrapper.find('RemoveButtonContainer').simulate('click');
     expect(mockClearItem).toHaveBeenCalled();
   });
 
   it('should call removeItem when left minus is clicked', () => {
-    wrapper.find('.quantity-container').childAt(0).simulate('click');
+    wrapper.find('QuantityContainer').childAt(0).simulate('click');
     expect(mockRemoveItem).toHaveBeenCalled();
   });
 
   it('should call addItem when rihgt plus is clicked', () => {
-    wrapper.find('.quantity-container').childAt(2).simulate('click');
+    wrapper.find('QuantityContainer').childAt(2).simulate('click');
     expect(mockAddItem).toHaveBeenCalled();
   });
 });

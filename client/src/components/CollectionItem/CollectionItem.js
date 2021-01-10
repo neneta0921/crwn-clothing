@@ -15,16 +15,12 @@ export const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
   return (
     <CollectionItemContainer>
-      <BackgroundImage key={item.id} className="background-image" imageUrl={imageUrl} />
+      <BackgroundImage imageUrl={imageUrl} />
       <CollectionFooterContainer>
-        <NameContainer key={item.id} className="name-container">
-          {name}
-        </NameContainer>
-        <PriceContainer key={item.id} className="price-container">
-          {price}
-        </PriceContainer>
+        <NameContainer>{name}</NameContainer>
+        <PriceContainer>{price}</PriceContainer>
       </CollectionFooterContainer>
-      <AddButton key={item.id} className="add-button" onClick={() => addItem(item)} inverted>
+      <AddButton onClick={() => addItem(item)} inverted>
         Add to cart
       </AddButton>
     </CollectionItemContainer>
