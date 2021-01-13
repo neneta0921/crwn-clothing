@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutPageContainer = styled.div`
   width: 55%;
@@ -8,7 +8,7 @@ export const CheckoutPageContainer = styled.div`
   align-items: center;
   margin: 50px auto 0;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 896px) {
     width: 90%;
   }
 
@@ -34,7 +34,7 @@ export const HeaderBlockContainer = styled.div`
     width: 8%;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 896px) {
     width: 22%;
 
     &:last-child {
