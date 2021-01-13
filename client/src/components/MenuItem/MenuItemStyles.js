@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const MenuItemContainer = styled.div`
   min-width: 30%;
-  height: ${({ size }) => (size ? '380px' : '240px')};
+  height: ${({ size }) => (size ? "380px" : "240px")};
   flex: 1 1 auto;
   display: flex;
   align-items: center;
@@ -32,12 +32,12 @@ export const MenuItemContainer = styled.div`
     margin-left: 7.5px;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 896px) {
     height: 200px;
   }
 `;
 
-MenuItemContainer.displayName = 'MenuItemContainer';
+MenuItemContainer.displayName = "MenuItemContainer";
 
 export const BackgroundImageContainer = styled.div`
   width: 100%;
@@ -47,7 +47,7 @@ export const BackgroundImageContainer = styled.div`
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
 
-BackgroundImageContainer.displayName = 'BackgroundImageContainer';
+BackgroundImageContainer.displayName = "BackgroundImageContainer";
 
 export const ContentContainer = styled.div`
   height: 90px;

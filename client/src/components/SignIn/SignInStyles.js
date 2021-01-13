@@ -1,19 +1,27 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SignInContainer = styled.div`
   width: 30vw;
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 896px) {
     width: 100%;
 
     button {
-      width: 100%;
+      width: 240px;
 
       &:first-child {
         margin-bottom: 20px;
       }
+    }
+
+  }
+
+  @media screen and (max-width: 480px) {
+
+    button {
+      width: 100%;
     }
   }
 `;
@@ -26,8 +34,11 @@ export const ButtonBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 800px) {
-    align-items: center;
+  @media screen and (max-width: 896px) {
     flex-direction: column;
+  }
+
+  @media screen and (max-width: 480px) {
+    align-items: center;
   }
 `;

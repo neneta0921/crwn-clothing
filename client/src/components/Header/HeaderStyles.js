@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeaderContainer = styled.div`
   height: 70px;
@@ -8,7 +8,7 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   margin-bottom: 25px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 896px) {
     height: 60px;
     padding: 10px;
     margin-bottom: 20px;
@@ -20,7 +20,7 @@ export const LogoContainer = styled(Link)`
   width: 70px;
   padding: 25px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 896px) {
     width: 50px;
     padding: 0px;
   }
@@ -33,7 +33,7 @@ export const OptionsContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 896px) {
     width: 80%;
   }
 `;
@@ -43,4 +43,4 @@ export const OptionLink = styled(Link)`
   cursor: pointer;
 `;
 
-OptionLink.displayName = 'OptionLink';
+OptionLink.displayName = "OptionLink";
