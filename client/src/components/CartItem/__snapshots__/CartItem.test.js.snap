@@ -12,14 +12,10 @@ exports[`should render cartItem component 1`] = `
   <div
     className="sc-dlfnbm iMlZdi"
   >
-    <span
-      className="name"
-    >
+    <span>
       hats
     </span>
-    <span
-      className="price"
-    >
+    <span>
       3
        x $
       10

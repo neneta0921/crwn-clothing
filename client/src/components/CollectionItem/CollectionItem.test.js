@@ -29,20 +29,20 @@ describe('CollectionItem component', () => {
   });
 
   it('should call addItem when AddButton clicked', () => {
-    wrapper.find('.add-button').simulate('click');
+    wrapper.find('AddButton').simulate('click');
     expect(mockAddItem).toHaveBeenCalled();
   });
 
   it('should render imageUrl as a prop on BackgroundImage', () => {
-    expect(wrapper.find('.background-image').prop('imageUrl')).toBe(imageUrl);
+    expect(wrapper.find('BackgroundImage').prop('imageUrl')).toBe(imageUrl);
   });
 
   it('should render name prop in NameContainer', () => {
-    expect(wrapper.find('.name-container').text()).toBe(mockName);
+    expect(wrapper.find('NameContainer').text()).toBe(mockName);
   });
 
   it('should render price prop in PriceContainer', () => {
-    const price = parseInt(wrapper.find('.price-container').text());
+    const price = parseInt(wrapper.find('PriceContainer').text());
     expect(price).toBe(mockPrice);
   });
 });

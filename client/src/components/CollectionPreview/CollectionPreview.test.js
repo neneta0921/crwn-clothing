@@ -29,7 +29,7 @@ describe('CollectionPreview component', () => {
   });
 
   it('should call history.push with the right string when TitleContainer clicked', () => {
-    wrapper.find('.title-container').simulate('click');
+    wrapper.find('TitleContainer').simulate('click');
     expect(mockHistory.push).toHaveBeenCalledWith(`${mockMatch.path}/${mockRouteName}`);
   });
 });

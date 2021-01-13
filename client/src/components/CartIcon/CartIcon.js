@@ -7,9 +7,9 @@ import { selectCartItemsCount } from '../../redux/cart/cartSelectors';
 import { CartIconContainer, ItemCountContainer, ShoppingIcon } from './CartIconStyled';
 
 export const CartIcon = ({ toggleCartHidden, itemCount }) => (
-  <CartIconContainer className="cart-icon-container" onClick={toggleCartHidden}>
+  <CartIconContainer onClick={toggleCartHidden}>
     <ShoppingIcon />
-    <ItemCountContainer className="item-count-container">{itemCount}</ItemCountContainer>
+    <ItemCountContainer>{itemCount}</ItemCountContainer>
   </CartIconContainer>
 );
 

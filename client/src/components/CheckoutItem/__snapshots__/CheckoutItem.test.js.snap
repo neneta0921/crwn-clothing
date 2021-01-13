@@ -18,7 +18,7 @@ exports[`CheckoutItem component should render CheckoutItem component 1`] = `
     hats
   </span>
   <span
-    className="sc-dlfnbm sc-hKgILt dqsrEz lhoYWa quantity-container"
+    className="sc-dlfnbm sc-hKgILt dqsrEz lhoYWa"
   >
     <div
       onClick={[Function]}
@@ -40,7 +40,7 @@ exports[`CheckoutItem component should render CheckoutItem component 1`] = `
     20
   </span>
   <div
-    className="sc-eCssSg dJkOIt remove-button"
+    className="sc-eCssSg dJkOIt"
     onClick={[Function]}
   >
     ✕

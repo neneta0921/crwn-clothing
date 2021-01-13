@@ -16,14 +16,18 @@ export const CartDropdownContainer = styled.div`
   z-index: 5;
 `;
 
-export const CartDropdownButton =styled(CustomButton)`
+export const CartDropdownButton = styled(CustomButton)`
   margin-top: auto;
 `;
+
+CartDropdownButton.displayName = 'CartDropdownButton';
 
 export const EmptyMessageContainer = styled.span`
   font-size: 18px;
   margin: 50px auto;
-`
+`;
+
+EmptyMessageContainer.displayName = 'EmptyMessageContainer';
 
 export const CartItemContainer = styled.div`
   height: 240px;

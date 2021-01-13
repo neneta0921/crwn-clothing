@@ -23,12 +23,12 @@ describe('CartIcon component', () => {
   });
 
   it('should call toggleCartHidden when icon is clicked', () => {
-    wrapper.find('.cart-icon-container').simulate('click');
+    wrapper.find('CartIconContainer').simulate('click');
     expect(mockToggleCartHidden).toHaveBeenCalled();
   });
 
   it('should render the itemCount as the text', () => {
-    const itemCount = parseInt(wrapper.find('.item-count-container').text());
+    const itemCount = parseInt(wrapper.find('ItemCountContainer').text());
     expect(itemCount).toBe(0);
   });
 });

@@ -2,7 +2,7 @@
 
 exports[`CartIcon component should render CartIcon component 1`] = `
 <div
-  className="sc-bdfBwQ flWUgh cart-icon-container"
+  className="sc-bdfBwQ flWUgh"
   onClick={[MockFunction]}
 >
   <svg
@@ -11,7 +11,7 @@ exports[`CartIcon component should render CartIcon component 1`] = `
     shopping-bag.svg
   </svg>
   <span
-    className="sc-dlfnbm gyrcfu item-count-container"
+    className="sc-dlfnbm gyrcfu"
   >
     0
   </span>
